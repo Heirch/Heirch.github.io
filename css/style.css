@@ -51,12 +51,10 @@ section {
     display: none; /* Hide non-active sections securely */
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; Removed to prevent top overflow clipping on tall sections */
     overflow-y: auto; /* Internal scroll if screen is too small */
-    padding-top: 80px;
-    padding-bottom: 2rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 100px 20px 3rem 20px;
+    z-index: 1;
 }
 
 section.active {
@@ -146,9 +144,9 @@ h1, h2, h3 {
 
 /* Glassmorphism Classes */
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
-    margin: 0 auto;
+    margin: auto; /* Applies auto vertical margins, perfectly centering short content without breaking tall content */
 }
 
 .container-glass {
