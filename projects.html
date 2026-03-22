@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Raj | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="projects">
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <canvas id="space-canvas"></canvas>
+
+    <nav>
+        <div class="nav-brand">Harsh Raj</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="soft-skills.html">Soft Skills</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="achievements.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="projects" class="section">
+            <div class="container hidden">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <h3>Process Management Dashboard</h3>
+                        <p class="date">June 2025 – July 2025</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Tkinter</span>
+                        </div>
+                        <ul class="project-details">
+                            <li>Designed a real-time system monitoring dashboard to track CPU usage, RAM utilization, and 50+ active processes simultaneously.</li>
+                            <li>Implemented task termination and refresh actions, reducing manual intervention by ~30%.</li>
+                            <li>Visualized metrics using dynamic Matplotlib charts for clear bottleneck identification.</li>
+                            <li>Built an interactive GUI ensuring minimal latency (<1s refresh).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-card glass-card">
+                        <h3>Dictionary Autocomplete</h3>
+                        <p class="date">Mar 2025 – Apr 2025</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Trie</span>
+                            <span class="tag">NLTK</span>
+                            <span class="tag">FastAPI</span>
+                        </div>
+                        <ul class="project-details">
+                            <li>Implemented Trie-based autocomplete delivering instant word suggestions in O(L) time.</li>
+                            <li>Processed and optimized 10,000+ entries using NLTK for accurate linguistic indexing.</li>
+                            <li>Developed a FastAPI backend with sub-100 ms response times.</li>
+                            <li>Achieved a 40–50% reduction in lookup time compared to linear search approaches.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card glass-card">
+                        <h3>HealthUP</h3>
+                        <p class="date">Apr 2024 - May 2024</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <ul class="project-details">
+                            <li>Built a medical appointment booking platform for doctors and patients.</li>
+                            <li>Added features for seamless appointment tracking and viewing patient reviews.</li>
+                            <li>Improved user flow and navigation, reducing booking steps by ~25%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Harsh Raj. Created with passion and code.</p>
+    </footer>
+
+    <script src="js/space.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
